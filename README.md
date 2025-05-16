@@ -1,7 +1,10 @@
 # uv 使用教學
 
-本文件說明如何使用 uv 工具來管理 Python 專案的環境與依賴
-官方網址: https://docs.astral.sh/uv/
+
+使用 uv 工具來管理 Python 專案的環境與依賴
+
+uv 官方網址 : https://docs.astral.sh/uv/
+
 ---
 
 ## 🚀 專案初始化
