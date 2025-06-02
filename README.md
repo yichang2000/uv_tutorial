@@ -71,6 +71,9 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 - `uv pin python 3.12`  
   設定專案預設使用的 Python 版本
 
+- `uv python uninstall 3.12`  
+  卸載指定版本的 Python（如 3.12）
+  
 ---
 
 ## 📦 套件管理
@@ -90,6 +93,9 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 - `uv remove [套件名稱]`  
   移除專案依賴中的套件
 
+- `uv lock --upgrade-package [套件名稱]`  
+  升級套件請運行 uv lock 並使用 --upgrade-package 標誌
+
 - `uv add -r requirements.txt`  
   從 `requirements.txt` 匯入套件到專案依賴
 
@@ -105,6 +111,42 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 
 - `uv run --python 3.12 main.py`  
   使用指定 Python 版本執行 `main.py`
+
+---
+
+## 🔧安裝 tool
+
+- `uv tool install [工具名稱]`  
+  安裝工具
+  
+- `[工具名稱] --version`  
+  查詢版本
+  
+- `uv tool upgrade [工具名稱]`  
+  升級工具，使用 uv tool upgrade --all 標誌升級所有工具
+  
+---
+
+## 🧰 實用工具
+管理和查看 uv 的状态，如缓存、存储目录，或执行自更新：
+
+- `uv cache clean`
+  清理緩存項目
+
+- `uv cache prune`
+  清理過期的緩存項目
+
+- `uv cache dir`
+  顯示 uv 緩存目錄路徑
+
+- `uv tool dir`
+  顯示 uv 工具目錄路徑
+
+- `uv python dir`
+  顯示 uv 安裝的 Python 版本路徑
+
+- `uv self update`
+  將 uv 更新到最新版本
 
 ---
 
