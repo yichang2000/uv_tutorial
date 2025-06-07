@@ -94,7 +94,7 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
   移除專案依賴中的套件
 
 - `uv lock --upgrade-package [套件名稱]`  
-  升級套件請運行 uv lock 並使用 --upgrade-package 標誌
+  升級套件請運行 uv lock 並使用 --upgrade-package 標誌。使用 Jupyter Notebook 開發環境需再執行一次 uv add --dev ipykernel 來更新套件
 
 - `uv add -r requirements.txt`  
   從 `requirements.txt` 匯入套件到專案依賴
