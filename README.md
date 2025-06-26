@@ -63,11 +63,14 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
   安裝最新版本的 Python
 
 - `uv python list`  
-  列出可用的 Python 版本（已安裝的會顯示路徑）
+  列出可用的 Python 版本（已安裝的會顯示路徑），使用 --only-installed 標誌會顯示目前已安裝的 Python 版本。
 
 - `uv python install 3.12`  
   安裝指定版本的 Python（如 3.12）
 
+- `uv run python --version`  
+  查看當前啟動環境中的 Python 版本
+  
 - `uv pin python 3.12`  
   設定專案預設使用的 Python 版本
 
