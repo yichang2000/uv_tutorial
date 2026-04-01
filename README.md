@@ -71,7 +71,7 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 - `uv run python --version`  
   查看當前啟動環境中的 Python 版本
   
-- `uv pin python 3.12`  
+- `uv python pin 3.12`  
   設定專案預設使用的 Python 版本
 
 - `uv python uninstall 3.12`  
