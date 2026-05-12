@@ -25,7 +25,7 @@ uv 會自動在專案資料夾內下載對應的 Python 版本、建立 `.venv` 
 ## 🔒 企業憑證與代理伺服器設定
 
 在某些情況下，您可能需要使用作業系統原生的憑證儲存庫，特別是當您依賴已包含在系統中的企業信任根憑證時（例如：強制透過企業 Proxy 上網）。
-您可以在專案中新增 uv.toml 檔案，並設置 system-certs = true
+您可以在專案中新增 uv.toml 檔案，並設置 system-certs = true。詳見 [uv 官方文件](https://docs.astral.sh/uv/reference/settings/#system-certs)
 
 ---
 
